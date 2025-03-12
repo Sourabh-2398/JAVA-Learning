@@ -9,6 +9,7 @@ public class ReflectionTutorial {
     public static void main(String[] args) throws IllegalAccessException, InvocationTargetException {
           Cat myCat = new Cat("Stella", 6);
           System.out.println(myCat.getName());
+          System.out.println(myCat instanceof Object);
 
           Field[] catFields = myCat.getClass().getDeclaredFields();
           for (Field catField : catFields) {
