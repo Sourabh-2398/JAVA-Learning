@@ -14,7 +14,7 @@ class Model implements Comparator<Car> {
 
     @Override
     public int compare(Car o1, Car o2) {
-        return o1.getModel().compareTo(o2.getModel());
+        return CharSequence.compare(o1.getModel(), o2.getModel());
     }
 }
 
